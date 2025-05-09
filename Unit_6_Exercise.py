@@ -84,7 +84,7 @@ training_data = [
 
 transition_counts, emission_counts, tag_counts, vocab, tags = train_hmm(training_data)
 
-test_a = ["The", "can", "meows"]
+test_a = ["The", "cat", "meows"]
 test_b = ["My", "dog", "barks", "loudly"]
 
 result_a = viterbi(test_a, transition_counts, emission_counts, tag_counts, vocab, tags)
